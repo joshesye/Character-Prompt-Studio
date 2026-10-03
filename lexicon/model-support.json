@@ -1,0 +1,528 @@
+{
+  "midjourney_params": [
+    {
+      "group": "基础参数",
+      "name": "/imagine (prompt)",
+      "desc": "根据你给的关键词随机生成4张图片，文生图"
+    },
+    {
+      "group": "后缀参数",
+      "name": "--ar",
+      "desc": "「宽长比」--aspect，或-ar用来设署图片的尺寸、宽高比"
+    },
+    {
+      "group": "基础参数",
+      "name": "/describe ( image)",
+      "desc": "根据你给的图片给你4条关键词示例，可以用来分析爆款图片的关键词，图生文"
+    },
+    {
+      "group": "后缀参数",
+      "name": "--chaos",
+      "desc": "「混乱」--chaos<number0-100》改变结果的多样性，较高的的值会产生更多不寻常和意外的效果"
+    },
+    {
+      "group": "基础参数",
+      "name": "/settings",
+      "desc": "查看当前默认设置，包括模型、风格，图片质量、速度等"
+    },
+    {
+      "group": "后缀参数",
+      "name": "--no",
+      "desc": "「负面提示」 --no-no plants表示会尝试从图像中移除植物"
+    },
+    {
+      "group": "基础参数",
+      "name": "/subscribe",
+      "desc": "购买会员服务的链接管理订阅"
+    },
+    {
+      "group": "后缀参数",
+      "name": "--quality",
+      "desc": "「质量」--quality<,25,.5,1>,或-q <,25,.5,1>您要花费多少染质量时间，默认值为1，值越高成本越高,值越低成本越低"
+    },
+    {
+      "group": "基础参数",
+      "name": "/ask ( question )",
+      "desc": "提问获取答案"
+    },
+    {
+      "group": "后缀参数",
+      "name": "--seed",
+      "desc": "「种子」--seed<integer between 0-4294967295> Midjourey使用种子编号创建视觉嗓声场，然后为每个图像随机生成，但可以使用seed或-sameseed参数指定，使用相同的种子编号和提示将产生相似的结束图像"
+    },
+    {
+      "group": "基础参数",
+      "name": "/blend",
+      "desc": "混合模式，该指令允许你上传2-5张图片,然后将这些图片合成新的图片效果"
+    },
+    {
+      "group": "后缀参数",
+      "name": "--stop",
+      "desc": "「停止」 --stop<integerbetween 10-100>使用-stop参数在流程中途完成作业，以较早的百分比停止作业会产生更模糊、不详细的结果"
+    },
+    {
+      "group": "基础参数",
+      "name": "/info",
+      "desc": "查看你的用户信息，有关当前排队或正在运行的作业、订阅类型、续订日期等信息"
+    },
+    {
+      "group": "后缀参数",
+      "name": "--style",
+      "desc": "「风格」 --style<4a,4b or 4c>在Midjourney模型版本之间切换"
+    },
+    {
+      "group": "基础参数",
+      "name": "/help",
+      "desc": "指南及基本的帮助信息"
+    },
+    {
+      "group": "后缀参数",
+      "name": "--stylize",
+      "desc": "「程式化」 --stylize<number>,或-s<number>参数会影响Midjourney的默认美学风格应用于作业的强度"
+    },
+    {
+      "group": "基础参数",
+      "name": "/prefer remix",
+      "desc": "切换到混合模式"
+    },
+    {
+      "group": "后缀参数",
+      "name": "--tile",
+      "desc": "「平铺」该参数可用作重复拼贴的图像，以创建织物、壁纸和纹理的无缝图案"
+    },
+    {
+      "group": "基础参数",
+      "name": "/prefer option set",
+      "desc": "创建或管理一个自定义选项"
+    },
+    {
+      "group": "后缀参数",
+      "name": "--uplight",
+      "desc": "「升频器」--uplight选择U按钮时使用替代的”轻型”升频器，结果更更接近原始网格图像。放大后的图像细节更少,更平滑"
+    },
+    {
+      "group": "基础参数",
+      "name": "/prefer option list",
+      "desc": "查看你当前的自定义选项"
+    },
+    {
+      "group": "后缀参数",
+      "name": "--upbeta",
+      "desc": "「升频器」--upbeta选择U按钮时使用替代的beta升频器。结果更接近原始网格图像。放大后的图像添加的细节明显页少"
+    },
+    {
+      "group": "基础参数",
+      "name": "/prefer suffix",
+      "desc": "指定一个后缀,添加到每个提示的末尾"
+    },
+    {
+      "group": "后缀参数",
+      "name": "--video",
+      "desc": "可用于创建图像生成过程的短片"
+    },
+    {
+      "group": "基础参数",
+      "name": "/show",
+      "desc": "重现自己的图片"
+    },
+    {
+      "group": "后缀参数",
+      "name": "::",
+      "desc": "「关键词权重」让 Midjourney 分别考虑两个或多个单独的关键词概念，"
+    },
+    {
+      "group": "基础参数",
+      "name": "/fast",
+      "desc": "切换到快速模式，一分钟以内出图，标准版15小时快速模式，专业版30小时"
+    },
+    {
+      "group": "后缀参数",
+      "name": "--iw",
+      "desc": "「垫图权重」找到一张合适的图片作为参考底图，配上文字描述，得到与图文相符合的图像，"
+    },
+    {
+      "group": "基础参数",
+      "name": "/relax",
+      "desc": "切换到慢速模式，3-5分钟出图，一般默认是快速模式用完以后自动切换"
+    },
+    {
+      "group": "后缀参数",
+      "name": "--v 6",
+      "desc": "「版本」 -version5可以缩写为--v5接受值1、2、3、4、5.1、5.2、6、6.1"
+    },
+    {
+      "group": "基础参数",
+      "name": "/private",
+      "desc": "私人创作,作品不会放在公开空间"
+    },
+    {
+      "group": "后缀参数",
+      "name": "--niji 6",
+      "desc": "「niji模型」专门针对动漫盒二次元的模型插图风格"
+    },
+    {
+      "group": "基础参数",
+      "name": "/stealth",
+      "desc": "切换到隐身模式(限专业计划的用户60美金/月)，生成的图片不在社区展示"
+    },
+    {
+      "group": "后缀参数",
+      "name": "--cref",
+      "desc": "后接参考图片的网址，就可以生成和参考图片一样相貌的人物。配合参数--cw，可以控制相似的范围。--cw 的数值在10---100。选择10，只是面部一致。选择100，则连带衣服和配饰也保持一致或者类似。"
+    },
+    {
+      "group": "基础参数",
+      "name": "/public",
+      "desc": "切换到公共模式(限专业计划的用户60美金/月)"
+    },
+    {
+      "group": "后缀参数",
+      "name": "--cref",
+      "desc": "目前只支持V6版本和Niji 6版本。但是，这也就意味着同一个人物可以生成真人实景照片，也可以利用Niji 6生成漫画人物，风格可以跨越。--cref 的控制不是很准确，还需要自己细调和选择。我自己测试的结果显示，"
+    },
+    {
+      "group": "基础参数",
+      "name": "/shorten",
+      "desc": "分析提示词中关键字"
+    },
+    {
+      "group": "后缀参数",
+      "name": "-- p",
+      "desc": "个性化模型"
+    }
+  ],
+  "sd_words": [
+    {
+      "group": "通用正面质量词：",
+      "label": "通用一",
+      "value": "masterpiece,ultra-detailed,best quality,HD Quality"
+    },
+    {
+      "group": "通用正面质量词：",
+      "label": "通用二",
+      "value": "4k,best quality,masterpiece,high quality,finely detailed,ultra highres,"
+    },
+    {
+      "group": "通用正面质量词：",
+      "label": "真实质感可加",
+      "value": "(photorealistic:1.4),(ultra realistic details:1.4),realistic,"
+    },
+    {
+      "group": "通用正面质量词：",
+      "label": "一般负面提示词：",
+      "value": "lowres, error, cropped, worst quality, low quality, jpeg artifacts, out of frame, watermark, signature，blurry"
+    },
+    {
+      "group": "通用正面质量词：",
+      "label": "通用一",
+      "value": "(worst quality:2), (low quality:2), (normal quality:2), lowres, ((monochrome)), ((grayscale)), bad anatomy,DeepNegative, skin spots, acnes, skin blemishes,(fat:1.2),facing away, looking away,tilted head, lowres,bad anatomy,bad hands, missing fingers,extra digit, fewer digits,bad feet,poorly drawn hands,poorly drawn face,mutation,deformed,extra fingers,extra limbs,extra arms,extra legs,malformed limbs,fused fingers,too many fingers,long neck,cross-eyed,mutated hands,polar lowres,bad body,bad proportions,gross proportions,missing arms,missing legs,extra digit, extra arms, extra leg, extra foot,teethcroppe,signature, watermark, username,blurry,cropped,jpeg artifacts,text,error,"
+    },
+    {
+      "group": "通用正面质量词：",
+      "label": "通用二",
+      "value": "illustration, 3d, sepia, painting, cartoons, sketch, (worst quality:2), ((monochrome)), ((grayscale:1.2)), (backlight:1.2), analog, analogphoto,bad anatomy, bad hands, double navel, collapsed eyeshadow, multiple eyebrows, freckles, signature, logo,2faces,DeepNegative, skin spots, acnes, skin blemishes,(fat:1.2),"
+    },
+    {
+      "group": "通用正面质量词：",
+      "label": "人物肖像负面一：",
+      "value": "NSFW,lowrs,blurry,(deformed, distorted, disfigured:1.3), (stacked torsos:1.2), (totem pole:1.1), poorly drawn, bad anatomy, wrong anatomy, missing arms, missing legs, extra arms, extra legs, fused fingers, too many fingers, long neck,extra limb, missing limb, floating limbs, (mutated hands and fingers:1.4), disconnected limbs, mutation, mutated, ugly, disgusting, blurry, amputation, (extra fingers:1.2), (worst quality, low quality:1.3)out of frame, worst quality, low quality, jpeg artifacts, ugly, duplicate, morbid, mutilated, mutation, deformed, blurry, dehydrated, bad proportions, extra limbs, cloned face, disfigured, gross proportions, malformed limbs"
+    },
+    {
+      "group": "通用正面质量词：",
+      "label": "人物肖像负面二：",
+      "value": "(((simple background))),monochrome,lowres,bad anatomy,bad hands,text,error,missing fingers,extra digit,fewer digits,cropped, worst quality, low quality, normal quality, jpeg artifacts,username, bad anatomy,cropped,worst quality, low quality, normal quality, signature, watermark, blurry, ugly,pregnant,vore,duplicate,morbid,mut ilated,tran nsexual, hermaphrodite,long neck,mutated hands,poorly drawn hands,poorly drawn face,mutation,deformed,bad anatomy,bad proportions,malformed limbs,extra limbs,cloned face,disfigured,gross proportions, (((missing arms))),(((missing legs))), (((extra arms))),(((extra legs))),pubic hair, plump,bad legs,error legs,bad feet"
+    },
+    {
+      "group": "通用正面质量词：",
+      "label": "逼真图片的负面：",
+      "value": "illustration, painting, drawing, art, sketch"
+    }
+  ],
+  "painting_tree": [
+    {
+      "group": "绘画技法",
+      "parent": "油画",
+      "child": ""
+    },
+    {
+      "group": "绘画技法",
+      "parent": "",
+      "child": "传统油画"
+    },
+    {
+      "group": "绘画内容",
+      "parent": "静物画",
+      "child": ""
+    },
+    {
+      "group": "绘画内容",
+      "parent": "",
+      "child": "花卉静物画"
+    },
+    {
+      "group": "绘画时代",
+      "parent": "古典绘画",
+      "child": ""
+    },
+    {
+      "group": "绘画时代",
+      "parent": "",
+      "child": "文艺复兴绘画"
+    },
+    {
+      "group": "绘画材料",
+      "parent": "传统绘画材料",
+      "child": ""
+    },
+    {
+      "group": "绘画材料",
+      "parent": "",
+      "child": "油画颜料"
+    },
+    {
+      "group": "其他类别",
+      "parent": "卡通动漫",
+      "child": ""
+    },
+    {
+      "group": "绘画技法",
+      "parent": "",
+      "child": "印象派油画"
+    },
+    {
+      "group": "绘画内容",
+      "parent": "",
+      "child": "水果静物画"
+    },
+    {
+      "group": "绘画时代",
+      "parent": "",
+      "child": "巴洛克绘画"
+    },
+    {
+      "group": "绘画材料",
+      "parent": "",
+      "child": "水彩颜料"
+    },
+    {
+      "group": "其他类别",
+      "parent": "涂鸦线条绘画",
+      "child": ""
+    },
+    {
+      "group": "绘画技法",
+      "parent": "",
+      "child": "现代油画"
+    },
+    {
+      "group": "绘画内容",
+      "parent": "",
+      "child": "器皿静物画"
+    },
+    {
+      "group": "绘画时代",
+      "parent": "",
+      "child": "浪漫主义绘画"
+    },
+    {
+      "group": "绘画材料",
+      "parent": "",
+      "child": "铅笔、炭笔等"
+    },
+    {
+      "group": "其他类别",
+      "parent": "简笔画",
+      "child": ""
+    },
+    {
+      "group": "绘画技法",
+      "parent": "水彩画",
+      "child": ""
+    },
+    {
+      "group": "绘画技法",
+      "parent": "",
+      "child": "透明水彩画"
+    },
+    {
+      "group": "绘画内容",
+      "parent": "人物画",
+      "child": ""
+    },
+    {
+      "group": "绘画内容",
+      "parent": "",
+      "child": "肖像画"
+    },
+    {
+      "group": "绘画时代",
+      "parent": "现代绘画",
+      "child": ""
+    },
+    {
+      "group": "绘画时代",
+      "parent": "",
+      "child": "印象派绘画"
+    },
+    {
+      "group": "绘画材料",
+      "parent": "数字绘画材料",
+      "child": ""
+    },
+    {
+      "group": "绘画材料",
+      "parent": "",
+      "child": "数位板"
+    },
+    {
+      "group": "其他类别",
+      "parent": "马克笔画",
+      "child": ""
+    },
+    {
+      "group": "绘画技法",
+      "parent": "",
+      "child": "重绘水彩画"
+    },
+    {
+      "group": "绘画内容",
+      "parent": "",
+      "child": "人物风俗画"
+    },
+    {
+      "group": "绘画时代",
+      "parent": "",
+      "child": "表现主义绘画"
+    },
+    {
+      "group": "绘画材料",
+      "parent": "",
+      "child": "数字绘画软件"
+    },
+    {
+      "group": "其他类别",
+      "parent": "一笔画",
+      "child": ""
+    },
+    {
+      "group": "绘画技法",
+      "parent": "素描",
+      "child": ""
+    },
+    {
+      "group": "绘画技法",
+      "parent": "",
+      "child": "铅笔素描"
+    },
+    {
+      "group": "绘画内容",
+      "parent": "",
+      "child": "人物肖像画"
+    },
+    {
+      "group": "绘画时代",
+      "parent": "",
+      "child": "极简主义绘画"
+    },
+    {
+      "group": "绘画技法",
+      "parent": "",
+      "child": "炭笔素描"
+    },
+    {
+      "group": "绘画内容",
+      "parent": "风景画",
+      "child": ""
+    },
+    {
+      "group": "绘画内容",
+      "parent": "",
+      "child": "自然风景画"
+    },
+    {
+      "group": "绘画时代",
+      "parent": "当代绘画",
+      "child": ""
+    },
+    {
+      "group": "绘画时代",
+      "parent": "",
+      "child": "抽象表现主义绘画"
+    },
+    {
+      "group": "绘画技法",
+      "parent": "",
+      "child": "彩色素描"
+    },
+    {
+      "group": "绘画内容",
+      "parent": "",
+      "child": "城市风景画"
+    },
+    {
+      "group": "绘画时代",
+      "parent": "",
+      "child": "超现实主义绘画"
+    },
+    {
+      "group": "绘画技法",
+      "parent": "粉彩画",
+      "child": ""
+    },
+    {
+      "group": "绘画技法",
+      "parent": "",
+      "child": "干粉彩画"
+    },
+    {
+      "group": "绘画内容",
+      "parent": "",
+      "child": "乡村风景画"
+    },
+    {
+      "group": "绘画时代",
+      "parent": "",
+      "child": "后现代主义绘画"
+    },
+    {
+      "group": "绘画技法",
+      "parent": "",
+      "child": "湿粉彩画"
+    },
+    {
+      "group": "绘画内容",
+      "parent": "抽象画",
+      "child": ""
+    },
+    {
+      "group": "绘画内容",
+      "parent": "",
+      "child": "色彩抽象画"
+    },
+    {
+      "group": "绘画技法",
+      "parent": "墨画",
+      "child": ""
+    },
+    {
+      "group": "绘画技法",
+      "parent": "",
+      "child": "水墨画"
+    },
+    {
+      "group": "绘画内容",
+      "parent": "",
+      "child": "形式抽象画"
+    },
+    {
+      "group": "绘画技法",
+      "parent": "",
+      "child": "汉字画"
+    },
+    {
+      "group": "绘画内容",
+      "parent": "",
+      "child": "符号抽象画"
+    }
+  ]
+}
